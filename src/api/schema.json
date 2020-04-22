@@ -1,0 +1,23 @@
+[{
+	"namespace": "ProfileManager",
+	"functions": [
+		{
+			"name": "getAll",
+			"type": "function",
+			"description": "Get the list of all available profiles.",
+			"async": true,
+			"parameters": []
+		},
+		{
+			"name": "open",
+			"type": "function",
+			"description": "Open a new instance of the given profile",
+			"async": true,
+			"parameters": [{
+				"name": "name",
+				"type": "string",
+				"description": "Name of the profile"
+			}]
+		}
+	]
+}]

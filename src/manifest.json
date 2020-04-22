@@ -1,0 +1,26 @@
+{
+	"manifest_version": 2,
+	"name": "Profile switcher",
+	"version": "1.0",
+
+	"description": "Adds a browser action icon to the toolbar to launch local profiles",
+
+	"browser_action": {
+		"browser_style": true,
+		"default_icon": "icon.png",
+		"default_title": "Profile manager",
+		"default_popup": "index.html"
+	},
+
+	"experiment_apis": {
+		"ProfileManager": {
+			"schema": "api/schema.json",
+			"parent": {
+				"scopes": ["addon_parent"],
+				"paths": [["ProfileManager"]],
+				"script": "api/implementation.js"
+			}
+		}
+	}
+
+}
