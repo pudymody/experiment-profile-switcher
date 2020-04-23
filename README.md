@@ -23,7 +23,7 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-As there isnt still a profile api available to webextensions, this needs to make its own experimental api. **This only works in Firefox Nightly with the extensions.experiments.enabled flag enabled**. To do this go to *about:config* search for *extensions.experiments.enabled* and set it to true. In case it doesnt exists, create it.
+As there isnt still a profile api available to webextensions, this needs to make its own experimental api. **This only works in Firefox Developer Edition and Firefox Nightly with the extensions.experiments.enabled flag enabled**. To do this go to *about:config* search for *extensions.experiments.enabled* and set it to true. In case it doesnt exists, create it.
 
 ### Installation
 
@@ -31,7 +31,7 @@ As there isnt still a profile api available to webextensions, this needs to make
 ```sh
 git clone https://github.com/pudymody/experiment-profile-switcher.git
 ```
-2. Go to *about:debugging* and in the *This nightly* tab click on *Load temporary Add-on...* and select the *manifest.json* file from the repo.
+2. Go to *about:debugging* and in the or *This Firefox* *This nightly* pane click on *Load temporary Add-on...* and select the *manifest.json* file from the repo.
 
 
 
